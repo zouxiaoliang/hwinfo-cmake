@@ -1,0 +1,6 @@
+.DS_Store
+.sync
+.vscode-ctags
+/build
+CMakeLists.txt.user
+/Icon
