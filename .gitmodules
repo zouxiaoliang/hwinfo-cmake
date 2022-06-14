@@ -1,0 +1,3 @@
+[submodule "hwinfo"]
+	path = hwinfo
+	url = https://github.com/openSUSE/hwinfo.git
