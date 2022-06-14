@@ -26,6 +26,8 @@ function(hwinfoMain)
     target_include_directories(thirdparty_libhwinfo_static SYSTEM PUBLIC ${SRC_DIR}/src/ids)
     target_include_directories(thirdparty_libhwinfo_static SYSTEM PUBLIC ${SRC_DIR}/src/isdn)
     target_include_directories(thirdparty_libhwinfo_static SYSTEM PUBLIC ${SRC_DIR}/src/smp)
+    target_include_directories(thirdparty_libhwinfo_static SYSTEM PUBLIC config)
+
     target_link_libraries(thirdparty_libhwinfo_static thirdparty_libx86emu thirdparty_uuid)
 
     add_library(thirdparty_libhwinfo INTERFACE)

@@ -10,7 +10,13 @@
 void HardwareInfo::scan() {
     hd_t* hd = nullptr;
 
-    hd_data_t* hd_data = new hd_data_t;
+    hd_data_t* hd_data = new (std::nothrow) hd_data_t;
+    if (nullptr == hd_data) {
+        return;
+    }
+
+    memset(hd_data, 0x0, sizeof(hd_data_t));
+
     hd_data->progress  = NULL;
     hd_data->debug     = ~(HD_DEB_DRIVER_INFO | HD_DEB_HDDB);
 
