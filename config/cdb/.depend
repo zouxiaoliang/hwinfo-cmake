@@ -1,0 +1,9 @@
+cdb_read.o: cdb_read.c cdb_read.h isdn_cdb_def.h \
+ /home/zouxiaoliang/workspace/git-repo/github/hwinfo/src/hd/hd.h
+isdn_cdb.o: isdn_cdb.c lex.yy.c isdn_cdb_def.h \
+ /home/zouxiaoliang/workspace/git-repo/github/hwinfo/src/hd/hd.h \
+ cdb_read.h
+lex.yy.o: lex.yy.c isdn_cdb_def.h
+mk_isdnhwdb.o: mk_isdnhwdb.c lex.yy.c isdn_cdb_def.h \
+ /home/zouxiaoliang/workspace/git-repo/github/hwinfo/src/hd/hd.h \
+ cdb_read.h cdb_hwdb.h

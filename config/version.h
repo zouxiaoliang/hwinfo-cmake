@@ -1,0 +1,1 @@
+#define HD_VERSION_STRING "21.80"
